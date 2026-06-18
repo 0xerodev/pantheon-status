@@ -1,6 +1,6 @@
 {
   "schema": "pantheon.source_of_truth.v1",
-  "generated": "2026-06-18T18:17:45Z",
+  "generated": "2026-06-18T18:21:48Z",
   "authority": "generated_from_repo_runtime_telemetry",
   "what_pantheon_is": "Deterministic in-house cognition+generation runtime (own vGPU/wafer compute + 452M ConceptNet language lattice + deterministic solvers + curated code emitter + IPU materialization). NOT an LLM, never a third-party model.",
   "hosts": {

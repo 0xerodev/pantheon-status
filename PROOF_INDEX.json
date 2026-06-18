@@ -1,7 +1,9 @@
 {
   "schema": "pantheon.proof_index.v1",
-  "generated": "2026-06-18T18:17:45Z",
+  "generated": "2026-06-18T18:21:48Z",
   "runtime_proofs": [
+    "runtime/proofs/author_1781806885259475273.json",
+    "runtime/proofs/author_1781806885028195061.json",
     "runtime/proofs/author_1781806598359842605.json",
     "runtime/proofs/author_1781806598152453667.json",
     "runtime/proofs/author_1781806597988015242.json",
@@ -19,9 +21,7 @@
     "runtime/proofs/author_1781802138047913684.json",
     "runtime/proofs/author_1781801435339697155.json",
     "runtime/proofs/author_1781800057916886215.json",
-    "runtime/proofs/author_1781797754431786228.json",
-    "runtime/proofs/wafer_replay_circuit_live_wiring_1781796784.json",
-    "runtime/proofs/wafer_replay_circuit_live_wiring_1781796062.json"
+    "runtime/proofs/author_1781797754431786228.json"
   ],
   "state_proofs": [
     "/opt/pantheon/state/proofs/generation_authority/latest.json",
