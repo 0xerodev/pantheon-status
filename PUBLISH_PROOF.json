@@ -1,12 +1,22 @@
 {
   "schema": "pantheon.publish_proof.v1",
+  "ok": true,
   "source_commit": "388db722157bb1be81f4e9820a38fef5ef99fb1d",
-  "status_repo_commit_before": "75a97c799cbd",
-  "status_repo_commit_after": "75a97c799cbd",
-  "generated_at": "2026-06-18T16:41:08Z",
-  "published_at": "2026-06-18T16:41:14Z",
-  "timestamps_advanced": false,
-  "status_repo_commit_changed": false,
+  "status_commit_before": "ef8de1c9e68b7dfae90f90f4cc58357a72ca343c",
+  "status_commit_after": "3e503606d096dbe82f1af784c247af920e7a985a",
+  "status_commit": "3e503606d096dbe82f1af784c247af920e7a985a",
+  "status_commit_advanced": true,
+  "generated_at": "2026-06-18T16:42:44Z",
+  "published_at": "2026-06-18T16:42:50Z",
+  "timestamp_before": "2026-06-18T16:41:08Z",
+  "timestamp_after": "2026-06-18T16:42:44Z",
+  "timestamp_verified": true,
+  "raw_url_verified": true,
+  "raw_http": {
+    "PANTHEON_LIVE_STATUS.md": "200",
+    "PANTHEON_SOURCE_OF_TRUTH.md": "200"
+  },
+  "raw_cdn_note": "raw.githubusercontent CDN TTL ~5min; timestamp verified via authoritative GitHub contents API",
   "files_published": [
     "PANTHEON_LIVE_STATUS.md",
     "PANTHEON_LIVE_STATUS.json",
@@ -15,7 +25,5 @@
     "MISSION_CONTROL_STATE.json",
     "PROOF_INDEX.json",
     "AUTHORITY.md"
-  ],
-  "ts_before": "2026-06-18T16:36:39Z",
-  "ts_after": "2026-06-18T16:36:39Z"
+  ]
 }
