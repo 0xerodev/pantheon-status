@@ -1,16 +1,16 @@
 {
   "schema": "pantheon.live_status.v1",
-  "generated": "2026-06-18T18:22:00Z",
+  "generated": "2026-06-18T18:38:24Z",
   "authority": "generated_from_repo_runtime_telemetry",
   "ready": false,
   "current_highest_blocker": "LIVE_CHAT_CAPABILITY_GAP",
   "repo": {
     "branch": "language-lattice-preservation-20260607",
-    "commit": "49cb4d186d4cf97fc265c72d340c9c27dafcd086",
-    "commit_short": "49cb4d186",
-    "dirty": 6,
+    "commit": "5d87082619cb3a5c6ee25bb04dbe5f89e111990c",
+    "commit_short": "5d8708261",
+    "dirty": 5,
     "remote": "git@github-pantheon:0xerodev/pantheon_working-ts2.git",
-    "last_commit": "pantheon-author AUTHOR_ENGINE_V1 create_test_file: create test file [tests/pantheon_authored_1781806872295656606.rs]"
+    "last_commit": "mission control: bind worker capsules for lane swarm replay"
   },
   "runtime": {
     "pantheon_v2gpu_service": "active",

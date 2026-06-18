@@ -1,16 +1,16 @@
 # Pantheon Live Status
 
-> GENERATED — do not hand-edit. Source: repo + runtime telemetry. Generated: 2026-06-18T18:22:00Z
+> GENERATED — do not hand-edit. Source: repo + runtime telemetry. Generated: 2026-06-18T18:38:24Z
 
 READY=False
 CURRENT_HIGHEST_BLOCKER=LIVE_CHAT_CAPABILITY_GAP
 
 ## Repository
 BRANCH=language-lattice-preservation-20260607
-COMMIT=49cb4d186d4cf97fc265c72d340c9c27dafcd086
-DIRTY=6
+COMMIT=5d87082619cb3a5c6ee25bb04dbe5f89e111990c
+DIRTY=5
 REMOTE=git@github-pantheon:0xerodev/pantheon_working-ts2.git
-LAST_COMMIT=pantheon-author AUTHOR_ENGINE_V1 create_test_file: create test file [tests/pantheon_authored_1781806872295656606.rs]
+LAST_COMMIT=mission control: bind worker capsules for lane swarm replay
 
 ## Runtime
 pantheon-v2gpu.service=active
