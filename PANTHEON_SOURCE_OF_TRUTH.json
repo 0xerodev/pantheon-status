@@ -1,6 +1,6 @@
 {
   "schema": "pantheon.source_of_truth.v1",
-  "generated": "2026-06-18T17:06:38Z",
+  "generated": "2026-06-18T17:07:27Z",
   "authority": "generated_from_repo_runtime_telemetry",
   "what_pantheon_is": "Deterministic in-house cognition+generation runtime (own vGPU/wafer compute + 452M ConceptNet language lattice + deterministic solvers + curated code emitter + IPU materialization). NOT an LLM, never a third-party model.",
   "hosts": {
@@ -43,7 +43,7 @@
       "AddMatchArm"
     ],
     "real_authoring_proven": true,
-    "false_commit_proof_present": true,
+    "false_commit_proof_present": false,
     "proven_intents": [
       "create test file",
       "create rust function foo()",

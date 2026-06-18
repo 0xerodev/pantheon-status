@@ -1,16 +1,16 @@
 {
   "schema": "pantheon.live_status.v1",
-  "generated": "2026-06-18T17:06:38Z",
+  "generated": "2026-06-18T17:07:27Z",
   "authority": "generated_from_repo_runtime_telemetry",
   "ready": false,
   "current_highest_blocker": "LIVE_CHAT_CAPABILITY_GAP",
   "repo": {
     "branch": "language-lattice-preservation-20260607",
-    "commit": "cb316b03147e9fe7913b3d01857fb92ea14c577f",
-    "commit_short": "cb316b031",
-    "dirty": 7,
+    "commit": "4c966e203d9b29b8ea28f2e3b8a87b82ec502b98",
+    "commit_short": "4c966e203",
+    "dirty": 8,
     "remote": "git@github-pantheon:0xerodev/pantheon_working-ts2.git",
-    "last_commit": "pantheon-author AUTHOR_ENGINE_V1 create_test_file: add unit test [tests/pantheon_authored_1781802139014703109.rs]"
+    "last_commit": "authority generator: self-derive AUTHOR_ENGINE_V1 proven state from author proofs; blocker->LIVE_CHAT_CAPABILITY_GAP"
   },
   "runtime": {
     "pantheon_v2gpu_service": "active",
@@ -41,7 +41,7 @@
       "AddMatchArm"
     ],
     "real_authoring_proven": true,
-    "false_commit_proof_present": true,
+    "false_commit_proof_present": false,
     "proven_intents": [
       "create test file",
       "create rust function foo()",
