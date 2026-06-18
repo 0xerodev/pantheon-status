@@ -1,16 +1,16 @@
 # Pantheon Live Status
 
-> GENERATED — do not hand-edit. Source: repo + runtime telemetry. Generated: 2026-06-18T17:10:51Z
+> GENERATED — do not hand-edit. Source: repo + runtime telemetry. Generated: 2026-06-18T18:17:45Z
 
 READY=False
 CURRENT_HIGHEST_BLOCKER=LIVE_CHAT_CAPABILITY_GAP
 
 ## Repository
 BRANCH=language-lattice-preservation-20260607
-COMMIT=b08f90ec5b2ed3b709abb9b1194d1da1ef380bda
-DIRTY=9
+COMMIT=291716a0ac2b6da534c91fc373ecdbbcb5137a2f
+DIRTY=4
 REMOTE=git@github-pantheon:0xerodev/pantheon_working-ts2.git
-LAST_COMMIT=directive persisted (pending): cc7501b7bb2a6225
+LAST_COMMIT=guard release hardening from author lane drift
 
 ## Runtime
 pantheon-v2gpu.service=active

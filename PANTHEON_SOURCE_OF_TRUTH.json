@@ -1,6 +1,6 @@
 {
   "schema": "pantheon.source_of_truth.v1",
-  "generated": "2026-06-18T17:10:51Z",
+  "generated": "2026-06-18T18:17:45Z",
   "authority": "generated_from_repo_runtime_telemetry",
   "what_pantheon_is": "Deterministic in-house cognition+generation runtime (own vGPU/wafer compute + 452M ConceptNet language lattice + deterministic solvers + curated code emitter + IPU materialization). NOT an LLM, never a third-party model.",
   "hosts": {
@@ -47,7 +47,8 @@
     "proven_intents": [
       "create test file",
       "create rust function foo()",
-      "add unit test"
+      "add unit test",
+      "target_project=pantheon\nCURRENT_HIGHEST_BLOCKER=RELEASE_CERTIFICATION_COMPILER_MISSING\nWHY_THIS_IS_HIGHEST=Pantheon lacks a level-0 release certifier that deterministically judges all release phases, unknown gaps, founder-absence readiness, and current highest blocker from runtime proof.\nEXPECTED_RELEASE_DELTA=Top-level self-judgment becomes real; future work routes through one certification queue instead of manual priority selection.\nWHY_OTHER_WORK_REJECTED=Point fixes without a compiler leave authority fragmented and release status non-deterministic.\n\nMISSION=Implement RELEASE_CERTIFICATION_COMPILER in Pantheon on x2 through Mission Control workers only.\n\nAUTHORITY_MODEL:\n- PANTHEON_TERMINAL_RELEASE_AUTHORITY_V1 is LEVEL_0 top-level release certifier.\n- Existing subsystem authorities remain LEVEL_1 inputs: docs/runtime/PANTHEON_SOURCE_OF_TRUTH.*, docs/PANTHEON_ORGANISM_MAP.md, docs/RELEASE_CERTIFICATION_GATE.md, docs/runtime/MISSION_CONTROL_STATE.json, runtime/directives/DIRECTIVE_LEDGER.*, runtime/proofs/*.\n- LEVEL_0 audits LEVEL_1; does not replace them.\n- If subsystem authority disagrees with runtime proof, runtime proof wins.\n- Founder-absence certification is a required release gate.\n\nIMPLEMENTATION_TARGET:\n1. Add canonical LEVEL_0 authority document for PANTHEON_TERMINAL_RELEASE_AUTHORITY_V1 with CANONICAL_AUTHORITY_MODEL.\n2. Add a Rust-owned RELEASE_CERTIFICATION_COMPILER that ingests the LEVEL_1 sources and runtime proofs.\n3. Emit deterministic JSON outputs:\n   - PANTHEON_RELEASE_STATE.json\n   - CRITICAL_GAPS.json\n   - UNKNOWN_GAPS.json\n   - CERTIFICATION_QUEUE.json\n   - BLOCKER_REGISTRY.json\n4. Each failing blocker must emit:\n   - single highest blocker\n   - owning component\n   - owning file\n   - owning function\n   - minimal patch path\n   - proof references\n5. Bridge existing generated authority so scripts/generate_authority.py reads compiler-backed release judgment instead of inventing top-level truth.\n6. Keep current public mirror path, but make it mirror compiler-backed state only.\n\nPREREQUISITE_PROOF:\nBefore broad implementation, prove Mission Control authoring can create or modify the required files for this feature. If workers still cannot create/modify arbitrary files beyond create_test_file/create_function, stop all downstream compiler work and treat AUTHOR_ENGINE_GENERALIZATION_REQUIRED as the true highest blocker.\n\nREQUIRED_PROOF:\n- proof artifact for authoring capability decision\n- proof artifact for compiler output generation\n- proof artifact for blocker registry and queue emission\n- proof artifact for authority bridge reading compiler outputs\n- commit hash if code lands\n\nSHIP_GATE:\n- compiler-backed JSON outputs exist\n- outputs parse cleanly\n- highest blocker is emitted deterministically\n- founder_absence phase exists and fails closed unless proven\n- existing source_of_truth/live_status remain generated, but are compiler-backed for release judgment\n- if authoring capability is insufficient, emit blocker proof instead of partial implementation\n\nCONSTRAINTS:\n- x2 Pantheon repo only\n- deterministic\n- proof-bound\n- Rust authoritative path preferred\n- no manual director patching"
     ],
     "note": "AUTHOR_ENGINE_V1: create_test_file + create_function lanes author real files, cargo-check + cargo-test, commit IFF live HEAD advances (false-commit gated). Proof: runtime/proofs/author_*.json."
   },
@@ -75,7 +76,8 @@
   "phase_1_verifies": [
     "create test file",
     "create rust function foo()",
-    "add unit test"
+    "add unit test",
+    "target_project=pantheon\nCURRENT_HIGHEST_BLOCKER=RELEASE_CERTIFICATION_COMPILER_MISSING\nWHY_THIS_IS_HIGHEST=Pantheon lacks a level-0 release certifier that deterministically judges all release phases, unknown gaps, founder-absence readiness, and current highest blocker from runtime proof.\nEXPECTED_RELEASE_DELTA=Top-level self-judgment becomes real; future work routes through one certification queue instead of manual priority selection.\nWHY_OTHER_WORK_REJECTED=Point fixes without a compiler leave authority fragmented and release status non-deterministic.\n\nMISSION=Implement RELEASE_CERTIFICATION_COMPILER in Pantheon on x2 through Mission Control workers only.\n\nAUTHORITY_MODEL:\n- PANTHEON_TERMINAL_RELEASE_AUTHORITY_V1 is LEVEL_0 top-level release certifier.\n- Existing subsystem authorities remain LEVEL_1 inputs: docs/runtime/PANTHEON_SOURCE_OF_TRUTH.*, docs/PANTHEON_ORGANISM_MAP.md, docs/RELEASE_CERTIFICATION_GATE.md, docs/runtime/MISSION_CONTROL_STATE.json, runtime/directives/DIRECTIVE_LEDGER.*, runtime/proofs/*.\n- LEVEL_0 audits LEVEL_1; does not replace them.\n- If subsystem authority disagrees with runtime proof, runtime proof wins.\n- Founder-absence certification is a required release gate.\n\nIMPLEMENTATION_TARGET:\n1. Add canonical LEVEL_0 authority document for PANTHEON_TERMINAL_RELEASE_AUTHORITY_V1 with CANONICAL_AUTHORITY_MODEL.\n2. Add a Rust-owned RELEASE_CERTIFICATION_COMPILER that ingests the LEVEL_1 sources and runtime proofs.\n3. Emit deterministic JSON outputs:\n   - PANTHEON_RELEASE_STATE.json\n   - CRITICAL_GAPS.json\n   - UNKNOWN_GAPS.json\n   - CERTIFICATION_QUEUE.json\n   - BLOCKER_REGISTRY.json\n4. Each failing blocker must emit:\n   - single highest blocker\n   - owning component\n   - owning file\n   - owning function\n   - minimal patch path\n   - proof references\n5. Bridge existing generated authority so scripts/generate_authority.py reads compiler-backed release judgment instead of inventing top-level truth.\n6. Keep current public mirror path, but make it mirror compiler-backed state only.\n\nPREREQUISITE_PROOF:\nBefore broad implementation, prove Mission Control authoring can create or modify the required files for this feature. If workers still cannot create/modify arbitrary files beyond create_test_file/create_function, stop all downstream compiler work and treat AUTHOR_ENGINE_GENERALIZATION_REQUIRED as the true highest blocker.\n\nREQUIRED_PROOF:\n- proof artifact for authoring capability decision\n- proof artifact for compiler output generation\n- proof artifact for blocker registry and queue emission\n- proof artifact for authority bridge reading compiler outputs\n- commit hash if code lands\n\nSHIP_GATE:\n- compiler-backed JSON outputs exist\n- outputs parse cleanly\n- highest blocker is emitted deterministically\n- founder_absence phase exists and fails closed unless proven\n- existing source_of_truth/live_status remain generated, but are compiler-backed for release judgment\n- if authoring capability is insufficient, emit blocker proof instead of partial implementation\n\nCONSTRAINTS:\n- x2 Pantheon repo only\n- deterministic\n- proof-bound\n- Rust authoritative path preferred\n- no manual director patching"
   ],
   "go_live_target": {
     "scope": "whole 847-component atlas",
@@ -84,10 +86,10 @@
     "ninety_day_sim": "REMOVED 2026-06-18",
     "stripe": "set up by founder"
   },
-  "latest_directive_id": "cc7501b7bb2a6225",
-  "latest_directive_hash": "cc7501b7bb2a6225dae2bf817309ae63324fc74b4cb224055be0b5043079735d",
-  "latest_directive_status": "persisted",
-  "latest_private_commit": "b08f90ec5",
-  "latest_public_commit": "2b615ae60378",
-  "github_sync_status": "synced"
+  "latest_directive_id": "c99c3858510bc567",
+  "latest_directive_hash": "c99c3858510bc567b4f09522dd57e4322d71a040a64c71df29bd1bbb90004788",
+  "latest_directive_status": "pending",
+  "latest_private_commit": null,
+  "latest_public_commit": null,
+  "github_sync_status": "pending"
 }

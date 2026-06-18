@@ -1,6 +1,6 @@
 # Pantheon Source of Truth
 
-> GENERATED — do not hand-edit. Generated: 2026-06-18T17:10:51Z
+> GENERATED — do not hand-edit. Generated: 2026-06-18T18:17:45Z
 
 ## What Pantheon Is
 Deterministic in-house cognition+generation runtime (own vGPU/wafer compute + 452M ConceptNet language lattice + deterministic solvers + curated code emitter + IPU materialization). NOT an LLM, never a third-party model.
