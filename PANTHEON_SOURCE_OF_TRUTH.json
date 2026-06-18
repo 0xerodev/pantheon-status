@@ -1,6 +1,6 @@
 {
   "schema": "pantheon.source_of_truth.v1",
-  "generated": "2026-06-18T17:07:27Z",
+  "generated": "2026-06-18T17:10:44Z",
   "authority": "generated_from_repo_runtime_telemetry",
   "what_pantheon_is": "Deterministic in-house cognition+generation runtime (own vGPU/wafer compute + 452M ConceptNet language lattice + deterministic solvers + curated code emitter + IPU materialization). NOT an LLM, never a third-party model.",
   "hosts": {
@@ -83,5 +83,11 @@
     "priority_1": "conversational + coding general understanding + replies",
     "ninety_day_sim": "REMOVED 2026-06-18",
     "stripe": "set up by founder"
-  }
+  },
+  "latest_directive_id": "cc7501b7bb2a6225",
+  "latest_directive_hash": "cc7501b7bb2a6225dae2bf817309ae63324fc74b4cb224055be0b5043079735d",
+  "latest_directive_status": "pending",
+  "latest_private_commit": null,
+  "latest_public_commit": null,
+  "github_sync_status": "pending"
 }

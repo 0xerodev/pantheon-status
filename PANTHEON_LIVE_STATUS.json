@@ -1,16 +1,16 @@
 {
   "schema": "pantheon.live_status.v1",
-  "generated": "2026-06-18T17:07:27Z",
+  "generated": "2026-06-18T17:10:44Z",
   "authority": "generated_from_repo_runtime_telemetry",
   "ready": false,
   "current_highest_blocker": "LIVE_CHAT_CAPABILITY_GAP",
   "repo": {
     "branch": "language-lattice-preservation-20260607",
-    "commit": "4c966e203d9b29b8ea28f2e3b8a87b82ec502b98",
-    "commit_short": "4c966e203",
+    "commit": "b08f90ec5b2ed3b709abb9b1194d1da1ef380bda",
+    "commit_short": "b08f90ec5",
     "dirty": 8,
     "remote": "git@github-pantheon:0xerodev/pantheon_working-ts2.git",
-    "last_commit": "authority generator: self-derive AUTHOR_ENGINE_V1 proven state from author proofs; blocker->LIVE_CHAT_CAPABILITY_GAP"
+    "last_commit": "directive persisted (pending): cc7501b7bb2a6225"
   },
   "runtime": {
     "pantheon_v2gpu_service": "active",
