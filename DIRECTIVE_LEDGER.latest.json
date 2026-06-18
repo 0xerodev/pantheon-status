@@ -10,9 +10,9 @@
   "directive_hash": "cc7501b7bb2a6225dae2bf817309ae63324fc74b4cb224055be0b5043079735d",
   "terminal_context_hash": "9e057ca8f46e219c",
   "authority_before_commit": "270f6a7119eb",
-  "authority_after_commit": null,
-  "private_repo_commit": null,
-  "public_status_commit": null,
+  "authority_after_commit": "2b615ae60378",
+  "private_repo_commit": "b08f90ec5",
+  "public_status_commit": "2b615ae60378",
   "proof_paths": [
     "runtime/proofs/author_1781800057916886215.json",
     "runtime/proofs/author_1781801435339697155.json",
@@ -20,5 +20,5 @@
     "runtime/proofs/author_1781802138905856924.json",
     "runtime/proofs/author_1781802139773573052.json"
   ],
-  "status": "pending"
+  "status": "persisted"
 }
