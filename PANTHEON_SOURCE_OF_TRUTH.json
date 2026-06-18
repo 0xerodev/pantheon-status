@@ -1,0 +1,84 @@
+{
+  "schema": "pantheon.source_of_truth.v1",
+  "generated": "2026-06-18T16:36:39Z",
+  "authority": "generated_from_repo_runtime_telemetry",
+  "what_pantheon_is": "Deterministic in-house cognition+generation runtime (own vGPU/wafer compute + 452M ConceptNet language lattice + deterministic solvers + curated code emitter + IPU materialization). NOT an LLM, never a third-party model.",
+  "hosts": {
+    "pantheon_runtime": "x2",
+    "repo": "/home/ubuntu/pantheon_working_new/pantheon",
+    "live_service": "pantheon-v2gpu.service :18183"
+  },
+  "answer_contract": {
+    "rule": "answer like a regular chatbot for everything, deterministic",
+    "banned": [
+      "abstain",
+      "I don't know",
+      "I can't verify",
+      "not grounded",
+      "canned non-answer"
+    ],
+    "allowed_fallback": "I'm not quite sure about that. Let me check on it for you. (then resolve + return)",
+    "fallback_budget": "<=1/1000",
+    "fallback_mechanism": "trigger Ising model (params/values/spins) + web research + lattice retrieval; Ising-first"
+  },
+  "conveyance_path": "FOUNDER_INTENT -> CLAUDE(director) -> PANTHEON intent_inbox.jsonl -> pantheon-intent-realizer -> MISSION_CONTROL -> WORKER (/v1/author) -> PROOF -> DIRECTOR_REPORT",
+  "current_highest_blocker": "AUTHOR_ENGINE_NOT_IMPLEMENTED",
+  "author_engine": {
+    "file": "src/runtime_compiler/frontier_authoring_pipeline.rs",
+    "supported_classes": [
+      "AddLog",
+      "AddGuard",
+      "AddValidation",
+      "AddMetric",
+      "AddComment"
+    ],
+    "unsupported_classes": [
+      "AddTest",
+      "CreateFile",
+      "CreateFunction",
+      "WriteCode",
+      "ImplementFeature",
+      "AddErrorPath",
+      "AddConfig",
+      "AddMatchArm"
+    ],
+    "real_authoring_proven": false,
+    "false_commit_proof_present": true,
+    "note": "class_template implements 5 trivial in-place stub edits only; create/test/function/write -> unsupported_class -> author_run_invalid. AUTHOR_ENGINE_V1 in progress."
+  },
+  "open_blockers": [
+    {
+      "id": "AUTHOR_ENGINE_NOT_IMPLEMENTED",
+      "desc": "frontier_authoring_pipeline.rs supports only 5 stub edit classes; AUTHOR_ENGINE_V1 implementing AddTest/CreateFile/CreateFunction/WriteCode/ImplementFeature",
+      "severity": "BLOCKER"
+    },
+    {
+      "id": "FALSE_COMMIT_PROOF",
+      "desc": "/v1/author can report committed=true on scratch worktree without moving live HEAD",
+      "severity": "BLOCKER"
+    },
+    {
+      "id": "LIVE_CHAT_CAPABILITY_GAP",
+      "desc": "/v1/chat: facts+reasoning pass; coding gen + open-domain synthesis fail/abstain",
+      "severity": "MAJOR"
+    },
+    {
+      "id": "USER_CAN_PAY",
+      "desc": "Stripe creds present; end-to-end pay flow unproven",
+      "severity": "MAJOR"
+    }
+  ],
+  "proven": [
+    "routing: build-class intents reach /v1/author (PATCH_A + bootstrap glob)",
+    "intent conveyance: founder intent -> intent_inbox -> realizer -> MC autopilot",
+    "452M lattice live (:7878), graph synthesis live",
+    "live /v1/chat: facts (Paris), reasoning (syllogism), science (Rayleigh), comparison pass"
+  ],
+  "go_live_target": {
+    "scope": "whole 847-component atlas",
+    "bar": "frontier or above",
+    "priority_1": "conversational + coding general understanding + replies",
+    "ninety_day_sim": "REMOVED 2026-06-18",
+    "stripe": "set up by founder"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "pantheon.mission_control_state.v1",
+  "generated": "2026-06-18T16:36:39Z",
+  "lock": {
+    "rule": "BEFORE analysis/planning/coding/blocker-declaration, READ AUTHORITY.md + PANTHEON_SOURCE_OF_TRUTH.json + PANTHEON_LIVE_STATUS.json",
+    "manual_edit_forbidden": [
+      "docs/runtime/PANTHEON_SOURCE_OF_TRUTH.md",
+      "docs/runtime/PANTHEON_SOURCE_OF_TRUTH.json",
+      "docs/runtime/PANTHEON_LIVE_STATUS.md",
+      "docs/runtime/PANTHEON_LIVE_STATUS.json"
+    ],
+    "ci_drift_fail": "if generated authority != runtime authority -> FAIL BUILD"
+  },
+  "realizer": "/opt/pantheon/bin/intent_realizer.sh (2-min timer)",
+  "inbox": "runtime/intent/intent_inbox.jsonl",
+  "author_route": "/v1/author (verify+commit)",
+  "routing_fixed": true,
+  "author_engine_implemented": false,
+  "current_highest_blocker": "AUTHOR_ENGINE_NOT_IMPLEMENTED"
+}

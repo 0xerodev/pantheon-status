@@ -1,0 +1,47 @@
+{
+  "schema": "pantheon.live_status.v1",
+  "generated": "2026-06-18T16:36:39Z",
+  "authority": "generated_from_repo_runtime_telemetry",
+  "ready": false,
+  "current_highest_blocker": "AUTHOR_ENGINE_NOT_IMPLEMENTED",
+  "repo": {
+    "branch": "language-lattice-preservation-20260607",
+    "commit": "388db722157bb1be81f4e9820a38fef5ef99fb1d",
+    "commit_short": "388db7221",
+    "dirty": 19,
+    "remote": "git@github-pantheon:0xerodev/pantheon_working-ts2.git",
+    "last_commit": "frontier(L4): grounded explain_subject composer (452M neighborhood -> articled sentence + junk-head filter); gravity clean live"
+  },
+  "runtime": {
+    "pantheon_v2gpu_service": "active",
+    "port_18183": "listening",
+    "health_ok": true,
+    "braind_pid": "2446220"
+  },
+  "failure_inventory": {
+    "abstain_matches": 321
+  },
+  "author_engine": {
+    "file": "src/runtime_compiler/frontier_authoring_pipeline.rs",
+    "supported_classes": [
+      "AddLog",
+      "AddGuard",
+      "AddValidation",
+      "AddMetric",
+      "AddComment"
+    ],
+    "unsupported_classes": [
+      "AddTest",
+      "CreateFile",
+      "CreateFunction",
+      "WriteCode",
+      "ImplementFeature",
+      "AddErrorPath",
+      "AddConfig",
+      "AddMatchArm"
+    ],
+    "real_authoring_proven": false,
+    "false_commit_proof_present": true,
+    "note": "class_template implements 5 trivial in-place stub edits only; create/test/function/write -> unsupported_class -> author_run_invalid. AUTHOR_ENGINE_V1 in progress."
+  }
+}
