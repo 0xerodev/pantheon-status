@@ -1,12 +1,12 @@
 # Pantheon Source of Truth
 
-> GENERATED — do not hand-edit. Generated: 2026-06-18T16:42:44Z
+> GENERATED — do not hand-edit. Generated: 2026-06-18T17:06:38Z
 
 ## What Pantheon Is
 Deterministic in-house cognition+generation runtime (own vGPU/wafer compute + 452M ConceptNet language lattice + deterministic solvers + curated code emitter + IPU materialization). NOT an LLM, never a third-party model.
 
 ## Current Highest Blocker
-AUTHOR_ENGINE_NOT_IMPLEMENTED
+LIVE_CHAT_CAPABILITY_GAP
 
 ## Answer Contract
 - RULE: answer like a regular chatbot for everything, deterministic
@@ -19,16 +19,17 @@ AUTHOR_ENGINE_NOT_IMPLEMENTED
 FOUNDER_INTENT -> CLAUDE(director) -> PANTHEON intent_inbox.jsonl -> pantheon-intent-realizer -> MISSION_CONTROL -> WORKER (/v1/author) -> PROOF -> DIRECTOR_REPORT
 
 ## Open Blockers
-- [BLOCKER] AUTHOR_ENGINE_NOT_IMPLEMENTED: frontier_authoring_pipeline.rs supports only 5 stub edit classes; AUTHOR_ENGINE_V1 implementing AddTest/CreateFile/CreateFunction/WriteCode/ImplementFeature
-- [BLOCKER] FALSE_COMMIT_PROOF: /v1/author can report committed=true on scratch worktree without moving live HEAD
-- [MAJOR] LIVE_CHAT_CAPABILITY_GAP: /v1/chat: facts+reasoning pass; coding gen + open-domain synthesis fail/abstain
+- [BLOCKER] LIVE_CHAT_CAPABILITY_GAP: /v1/chat: facts+reasoning pass; 321 abstain matches; coding gen + open-domain synthesis fail/abstain
 - [MAJOR] USER_CAN_PAY: Stripe creds present; end-to-end pay flow unproven
 
 ## Proven
-- routing: build-class intents reach /v1/author (PATCH_A + bootstrap glob)
+- PHASE_1 AUTHOR_ENGINE_V1: create_test_file + create_function lanes author real files, cargo-check + cargo-test, real live HEAD move (VERIFY_1/2/3 pass)
+- PHASE_2 FALSE_COMMIT_PROOF closed: committed gated on live HEAD advance (create lanes)
+- routing: build-class intents reach /v1/author
 - intent conveyance: founder intent -> intent_inbox -> realizer -> MC autopilot
 - 452M lattice live (:7878), graph synthesis live
 - live /v1/chat: facts (Paris), reasoning (syllogism), science (Rayleigh), comparison pass
+- authority externalized -> public mirror 0xerodev/pantheon-status (ChatGPT-readable, auto-published)
 
 ## Go-Live Target
 - SCOPE: whole 847-component atlas

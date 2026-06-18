@@ -1,47 +1,52 @@
 {
   "schema": "pantheon.live_status.v1",
-  "generated": "2026-06-18T16:42:44Z",
+  "generated": "2026-06-18T17:06:38Z",
   "authority": "generated_from_repo_runtime_telemetry",
   "ready": false,
-  "current_highest_blocker": "AUTHOR_ENGINE_NOT_IMPLEMENTED",
+  "current_highest_blocker": "LIVE_CHAT_CAPABILITY_GAP",
   "repo": {
     "branch": "language-lattice-preservation-20260607",
-    "commit": "388db722157bb1be81f4e9820a38fef5ef99fb1d",
-    "commit_short": "388db7221",
-    "dirty": 23,
+    "commit": "cb316b03147e9fe7913b3d01857fb92ea14c577f",
+    "commit_short": "cb316b031",
+    "dirty": 7,
     "remote": "git@github-pantheon:0xerodev/pantheon_working-ts2.git",
-    "last_commit": "frontier(L4): grounded explain_subject composer (452M neighborhood -> articled sentence + junk-head filter); gravity clean live"
+    "last_commit": "pantheon-author AUTHOR_ENGINE_V1 create_test_file: add unit test [tests/pantheon_authored_1781802139014703109.rs]"
   },
   "runtime": {
     "pantheon_v2gpu_service": "active",
     "port_18183": "listening",
     "health_ok": true,
-    "braind_pid": "2446220"
+    "braind_pid": "2172769"
   },
   "failure_inventory": {
     "abstain_matches": 321
   },
   "author_engine": {
-    "file": "src/runtime_compiler/frontier_authoring_pipeline.rs",
+    "file": "src/runtime_compiler/frontier_authoring_pipeline.rs + src/bin/pantheon_restored_braind.rs (AUTHOR_ENGINE_V1 lane)",
     "supported_classes": [
       "AddLog",
       "AddGuard",
       "AddValidation",
       "AddMetric",
-      "AddComment"
+      "AddComment",
+      "create_test_file",
+      "create_function"
     ],
     "unsupported_classes": [
-      "AddTest",
       "CreateFile",
-      "CreateFunction",
       "WriteCode",
       "ImplementFeature",
       "AddErrorPath",
       "AddConfig",
       "AddMatchArm"
     ],
-    "real_authoring_proven": false,
+    "real_authoring_proven": true,
     "false_commit_proof_present": true,
-    "note": "class_template implements 5 trivial in-place stub edits only; create/test/function/write -> unsupported_class -> author_run_invalid. AUTHOR_ENGINE_V1 in progress."
+    "proven_intents": [
+      "create test file",
+      "create rust function foo()",
+      "add unit test"
+    ],
+    "note": "AUTHOR_ENGINE_V1: create_test_file + create_function lanes author real files, cargo-check + cargo-test, commit IFF live HEAD advances (false-commit gated). Proof: runtime/proofs/author_*.json."
   }
 }

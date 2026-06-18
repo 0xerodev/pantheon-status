@@ -1,6 +1,6 @@
 {
   "schema": "pantheon.mission_control_state.v1",
-  "generated": "2026-06-18T16:42:44Z",
+  "generated": "2026-06-18T17:06:38Z",
   "lock": {
     "rule": "BEFORE analysis/planning/coding/blocker-declaration, READ AUTHORITY.md + PANTHEON_SOURCE_OF_TRUTH.json + PANTHEON_LIVE_STATUS.json",
     "manual_edit_forbidden": [
@@ -15,6 +15,6 @@
   "inbox": "runtime/intent/intent_inbox.jsonl",
   "author_route": "/v1/author (verify+commit)",
   "routing_fixed": true,
-  "author_engine_implemented": false,
-  "current_highest_blocker": "AUTHOR_ENGINE_NOT_IMPLEMENTED"
+  "author_engine_implemented": true,
+  "current_highest_blocker": "LIVE_CHAT_CAPABILITY_GAP"
 }
