@@ -1,6 +1,6 @@
 {
   "schema": "pantheon.live_status.v1",
-  "generated": "2026-06-18T16:36:39Z",
+  "generated": "2026-06-18T16:41:08Z",
   "authority": "generated_from_repo_runtime_telemetry",
   "ready": false,
   "current_highest_blocker": "AUTHOR_ENGINE_NOT_IMPLEMENTED",
@@ -8,7 +8,7 @@
     "branch": "language-lattice-preservation-20260607",
     "commit": "388db722157bb1be81f4e9820a38fef5ef99fb1d",
     "commit_short": "388db7221",
-    "dirty": 19,
+    "dirty": 23,
     "remote": "git@github-pantheon:0xerodev/pantheon_working-ts2.git",
     "last_commit": "frontier(L4): grounded explain_subject composer (452M neighborhood -> articled sentence + junk-head filter); gravity clean live"
   },
