@@ -1,0 +1,21 @@
+{
+  "schema": "pantheon.publish_proof.v1",
+  "source_commit": "388db722157bb1be81f4e9820a38fef5ef99fb1d",
+  "status_repo_commit_before": "75a97c799cbd",
+  "status_repo_commit_after": "75a97c799cbd",
+  "generated_at": "2026-06-18T16:41:08Z",
+  "published_at": "2026-06-18T16:41:14Z",
+  "timestamps_advanced": false,
+  "status_repo_commit_changed": false,
+  "files_published": [
+    "PANTHEON_LIVE_STATUS.md",
+    "PANTHEON_LIVE_STATUS.json",
+    "PANTHEON_SOURCE_OF_TRUTH.md",
+    "PANTHEON_SOURCE_OF_TRUTH.json",
+    "MISSION_CONTROL_STATE.json",
+    "PROOF_INDEX.json",
+    "AUTHORITY.md"
+  ],
+  "ts_before": "2026-06-18T16:36:39Z",
+  "ts_after": "2026-06-18T16:36:39Z"
+}
