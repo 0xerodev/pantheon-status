@@ -1,6 +1,6 @@
 {
   "schema": "pantheon.mission_control_state.v1",
-  "generated": "2026-06-18T16:41:08Z",
+  "generated": "2026-06-18T16:42:44Z",
   "lock": {
     "rule": "BEFORE analysis/planning/coding/blocker-declaration, READ AUTHORITY.md + PANTHEON_SOURCE_OF_TRUTH.json + PANTHEON_LIVE_STATUS.json",
     "manual_edit_forbidden": [
